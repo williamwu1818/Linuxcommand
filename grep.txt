@@ -3,3 +3,6 @@ grep -v with multiple patterns
 grep test somefile | grep -v -e error -e critical -e warning
 grep test somefile | grep -vE '(error|critical|warning)'
 grep test somefile | grep -vE 'error|critical|warning'
+
+匹配多个pattern:
+grep -E "pattern1|pattern2"
