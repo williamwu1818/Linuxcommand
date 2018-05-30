@@ -1,0 +1,5 @@
+去除多个pattern:
+grep -v with multiple patterns
+grep test somefile | grep -v -e error -e critical -e warning
+grep test somefile | grep -vE '(error|critical|warning)'
+grep test somefile | grep -vE 'error|critical|warning'
