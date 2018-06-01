@@ -1,0 +1,9 @@
+挂载网盘
+
+yum -y install cifs-utils
+
+cd /mnt/
+mkdir netfolder
+mount.cifs //xx.xx.xx.xx/sharefolder /mnt/netfolder
+mount.cifs -o username=username,port=xxxx //xx.xx.xx.xx/sharefolder /mnt/netfolder
+mount.cifs -o username=username,password=xxxxx //xx.xx.xx.xx/sharefolder /mnt/netfolder
